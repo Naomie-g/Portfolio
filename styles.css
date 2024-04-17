@@ -196,7 +196,7 @@ body {
     max-width: 630px;
     padding-bottom: 20%;
     height: auto;
-    border-radius: 8px;
+    border-radius: 50%;
 }
 
 .about-text h2 {
@@ -253,13 +253,27 @@ body {
 }
 
 .container {
+    width: 100%;
+    height: 100%;
     padding: 90px;
 }
 
-.services-list {
+/* .services-list {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(259px, 1fr));
+    
     grid-gap: 40px;
+    margin-top: 50px;
+} */
+
+.services-list {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    gap: 40px;
     margin-top: 50px;
 }
 
@@ -272,9 +286,13 @@ body {
     transition: background 0.5s, transforme 0.5s;
     box-shadow: 1px 1px 20px #012290f7,
         1px 1px 45px #0053b8f7;
+    width: 100%;
+    height: 100%;
+    
 }
 
 .services-list div h2 {
+    text-align: center;
     font-size: 30px;
     font-weight: 500;
     margin-bottom: 15px;
@@ -286,6 +304,18 @@ body {
     font-size: 12px;
     margin-top: 20px;
     display: inline-block;
+}
+
+.services-list div i {
+    display:flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    font-weight: 700;
+    padding-top: 0.25em;
+    line-height: 1.7;
 }
 
 .read {
@@ -341,7 +371,7 @@ body {
     color: #0ef;
 }
 
-.portfolio-content {
+.portfolio-content  {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(359px, 400px));
     gap: 5rem;
@@ -397,8 +427,8 @@ body {
 .layer i {
     color: #ff004f;
     margin-top: 20px;
-    font-size: 20px;
-    background: #fff;
+    font-size: 27px;
+    background: #ffffff;
     width: 60px;
     height: 60px;
     display: flex;
@@ -408,14 +438,22 @@ body {
 
 
 }
-
+.layer a{
+    text-decoration: none;
+}
+.layer i:hover{
+    background-color: transparent;
+}
 .row:hover img {
     transform: scale(1.1);
 }
 
 .row:hover .layer {
     height: 100%;
+    text-align: center;
 }
+
+
 
 .contact {
     display: grid;
@@ -450,7 +488,11 @@ body {
     line-height: 30px;
     margin-bottom: 2rem;
 }
-
+.contact-text i{
+    padding: 1rem;
+   
+    
+}
 .contact-list {
     margin-bottom: 3rem;
 }
@@ -703,7 +745,7 @@ body {
 
     }
 
-    .iabout-img {
+    .about-img {
         display: flex;
         width: 50%;
         justify-content: center;
@@ -790,7 +832,7 @@ body {
     }
 
     
-    .about {
+    .about, .skills {
         display: flex;
         flex-direction: column;
         justify-content: center;
