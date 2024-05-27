@@ -902,9 +902,14 @@ body {
     }
     
     .container {
+       
         padding: 40px;
     }
-   
+   .services-list {
+    display: flex;
+    flex-direction: column;
+   }
+
     .services-list i {
         display:flex;
         flex-direction: row;
@@ -919,6 +924,10 @@ body {
 
     .services-list h2{
         text-align: center;
+    }
+
+    .portfolio-content a {
+        display: contents;
     }
 
     
